@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <title>Mood Tool Kit</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
 <style>
 button {
   background: white;
@@ -16,6 +20,8 @@ button {
 </style>
 
 </head>
+
+<body>
     <div class="container"> 
 <h3>Welcome to Mood Tool Kit</h3>
 <h2>How do you feel ...</h2> <!-- need to add animated dots-->
@@ -23,7 +29,7 @@ button {
 <br>
 
   <div><!-- place for emojies-->
-  <button id = "silly" style="font-size:100px">&#128540;</button>
+  <button id = "silly" value = "silly" style="font-size:100px">&#128540;</button>
   <button id = "happy" style="font-size:100px">&#128513;</button>
   <button id = "laughing" style="font-size:100px">&#128514;</button>
   <button id = "cool" style="font-size:100px">&#128526;</button>
@@ -49,31 +55,11 @@ button {
 </div> <!-- to close emojies div-->
 
 </div> <!-- to close container-->
-
-
-<body>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script>
+<div id="divForGif"></div>
 
 
 
-
-var emoji = document.getElementByID("silly")
-emoji.onclick = function(){
-
-
-
-
-};
-
-
-
-
-</script>
-
+<script src="giphy.js"></script>
 
 
 
