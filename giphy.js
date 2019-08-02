@@ -39,8 +39,6 @@
       }); // to close response funtion
       var queryURL = "http://quotes.rest/qod.json?category=inspire";
     
-      // limit = 10 to limit the amount of gifs 
-   // console.log(queryURL);
    $.ajax({
      url: queryURL,
      method: "GET"
@@ -53,14 +51,7 @@
      var author = response.contents.quotes[0].author;
 
      var results = quote+ " - " + author
-       // var quoteDiv = $("");
-       
-       // var quoteDiv = $("<img>");
-       // gifImage.addClass('gif');
-
-       // gifImage.attr("src", results[i].images.original.url);
-
-       
+      
        $("#quote-content").prepend(results);
 
       
@@ -110,7 +101,7 @@
 
         } 
 
-
+        
       }); // to close response funtion
      
     
